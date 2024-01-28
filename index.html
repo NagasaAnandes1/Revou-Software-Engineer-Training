@@ -1,9 +1,222 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Website</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
     </head>
     <body>
-        <h1>Hello My World</h1>
+        <header>
+            <h1 id="awal"><center>Revou Training Materials</center></h1>
+        </header>
+        
+        <main>
+            <h2>Ordered List</h2>
+                <ol type="i">
+                    <li>HTML</li>
+                    <li>Java</li>
+                </ol>
+                <!--Membuat list-->
+
+            <hr> <!--Membuat garis horizontal-->
+            <h2>Table</h2>
+                <table>
+                    <tr>
+                        <th rowspan="5">
+                            <center>Data row</center>
+                        </th>
+                        <!--Membuat merge disamping / row-->
+                        <th colspan="3">
+                            <center>Data col</center>
+                        </th>
+                        <!--Membuat merge diatas / colm-->
+                    </tr>
+                    <tr>
+                        <!--th digunakan untuk header-->
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <!--td digunakan untuk isi-->
+                        <td>Nagasa</td>
+                        <td>123</td>
+                        <td>Indonesia</td>
+                    </tr>
+                    <tr>
+                        <td>Anandes</td>
+                        <td>456</td>
+                        <td>Singapore</td>
+                    </tr>
+                    <tr>
+                        <td>Putra</td>
+                        <td>789</td>
+                        <td>Japan</td>
+                    </tr>
+                </table>
+
+            <hr>
+            <h2>Display Image</h2>
+                <p>Local image</p>
+                    <img src="assets/fortnite.png" alt="Game 1" width="200" height="100%"/>
+                    <!--Memanggil gambar yang berada di lokal file-->
+                <p>Url image</p>
+                    <img src="https://i.pinimg.com/564x/bc/a7/47/bca747bec6c183cca5cf4843cccd335b.jpg" alt="Game 2" width="200" height="100%"/>
+                    <!--Memanggil gambar yang berasal dari url-->
+
+            <hr>
+            <h2>Absolute & Relative Links</h2>
+                <h3>Absolute Link</h3>
+                <!--Eksternal Link-->
+                    <p>
+                        <a href="https://www.google.com/">
+                            Google
+                        </a>
+                        <!--Membuat sebuah akses menuju ke link-->
+                        <br>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            Youtube
+                        </a>
+                        <!--_blank = menuju ke link dengan tab baru-->
+                    </p>
+                <h3>Relative Link</h3>
+                <!--Internal Link-->
+                    <p>
+                        <a href="home.html">
+                            Page Home
+                        </a>
+                        <br>
+                        <a href="/practice1.html" target="_blank">
+                            Page Practice
+                        </a>
+                    </p>
+            
+            <hr>
+            <h2>ID Link</h2>
+                <!--Membuat sebuah akses langsung ke yang ingin dituju melalui scroll-->
+                <p>
+                    <a href="#awal">Click to return</a>
+                    <!--Membuat kita menuju ke page dengan id=awal-->
+                </p>
+            
+            <hr>
+            <h2>Forms</h2>
+                <!--Membuat formulir-->
+                <form>
+                    <label for="name">Name :</label>
+                    <input id="name" type="text">
+                    <br>
+
+                    <label for="password">password :</label>
+                    <input type="password" required>
+                    <br>
+                    
+                    <label for="skill">Skill :</label>
+                    <input type="checkbox">HTML
+                    <input type="checkbox">JavaScript
+                    <br>
+
+                    <p>Gender : 
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                    </p>       
+                
+
+                    <label for="experience">Work Experience :</label>
+                    <input type="number" min="1" max="40">
+                    <br>
+
+                    <label for="address">Address :</label>
+                    <textarea rows="8" cols="64">Write here</textarea>
+                    <br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            
+            <hr>
+            <h2>Button</h2>
+                <!--Membuat Tombol-->
+                <button type="button">
+                    Apply
+                </button>
+                <button type="button" onclick="doSomething();">
+                    Submit
+                </button>
+                
+            <hr>
+            <h2>Select Forms</h2>
+                <!--Membuat pilihan pada formulir-->
+                <label for="color">Favorite Color</label>
+                <select name="color" id="color" form="colorform">
+                    <option value="red">Red</option>
+                    <option value="gren">Green</option>
+                    <option value="blue">Blue</option>
+                </select>
+            
+            <hr>
+            <h2>Option Groups</h2>
+                <!--Membuat pilihan didalam pilihan-->
+                <label for="drink">Favorite Drink</label>
+                <select name="drink" id="drink">
+                    <optgroup label="Coffee">
+                        <option value="black">Black</option>
+                        <option value="Café au lait">Café au lait</option>
+                        <option value="Frappuccino">Frappuccino</option>                   
+                    </optgroup>
+                    <optgroup label="Juice">
+                        <option value="mango">Mango Juice</option>
+                        <option value="avocado">avocado Juice</option>
+                        <option value="blueberry">blueberry Juice</option>
+                    </optgroup>
+                </select>
+            
+            <hr>
+            <h2>Radio Button</h2>
+                <!--Membuat tombol yang hanya bisa dipilih salah satu-->
+                <input type="radio" id="html" name="language" value="HTML">
+                <label for="html">HTML</label>
+                <input type="radio" id="flutter" name="language" value="Flutter">
+                <label for="flutter">Flutter</label>
+                <input type="radio" id="javascript" name="language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            
+            <hr>
+            <h2>Field Sets & Legends</h2>
+                <!--Membuat section-->
+                <fieldset>
+                    <legend>Personal Data</legend>
+                    <p>
+                        <label for="name">Name :</label>
+                        <input type="text" name="name">
+                    </p>
+                    <p>
+                        <label for="age">Age :</label>
+                        <input type="number" name="age" min="1">
+                    </p>
+                </fieldset>
+            
+            <hr>
+            <h2>Division Tag</h2>
+                <!--Kostumisasi layout dengan fleksibel-->
+                <div>Division 1</div>
+                <div>Division 2</div>
+                <div>Division 3</div>
+            
+            <hr>
+            <h2>Span Tag</h2>
+                <!--Highlight untuk baris yang di blok-->
+                <p>Ny Name is <span>Mr.X</span></p>
+        </main>
+        
+        <footer>
+            <h1><center>Finish</center></h1>
+        </footer>
     </body>
 </html>

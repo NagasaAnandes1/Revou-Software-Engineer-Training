@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 1</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .left {
+            float: left;
+            width: 50%;
+        }
+        .right {
+            float: right;
+            width: 50%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        th {
+            text-align: left;
+        }
+        /* table, th, td {
+            border: 1px solid black;
+        } */
+        .width{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Let's Practice !</h1>
+    </header>
+
+    <main>
+        <div>
+            <h3>Form Belajar</h3>
+            <p>Ini adalah wabsite latihan pertama</p>
+        </div>
+        <div class="row">
+            <div class="left" style="background-color: aliceblue; justify-items: center; align-items: center;">
+                <form>
+                    <table>
+                        <tr>
+                            <th>
+                                <label for="name">Name</label>
+                            </th>
+                            <td>:</td>
+                            <td>
+                                <input type="text" id="name" name="name" placeholder="Insert Name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="birth">Place of Birth</label>
+                            </th>
+                            <td>:</td>
+                            <td>
+                                <input type="text" id="birth" name="birth" placeholder="Insert Place">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="gender">Gender</label>
+                            </th>
+                            <td>:</td>
+                            <td>
+                                <input type="radio" id="male" name="gender">
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender">
+                                <label for="female">Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="message">Message</label>
+                            </th>
+                            <td>:</td>
+                            <td>
+                                <textarea name="message" id="message" class="width" rows="5" placeholder="Insert Message"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="align-items: center;">
+                                <button type="submit" style="width: 100%;">
+                                    Submit
+                                </button>
+                            </td>
+                        </tr>
+                    </table> 
+                </form>
+            </div>
+            <div class="right" style="background-color: cadetblue;">
+                <p>col 2</p>
+            </div>
+          </div>
+    </main>
+</body>
+</html>
