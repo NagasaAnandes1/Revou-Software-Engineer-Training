@@ -8,97 +8,92 @@
         h1{
             text-align: center;
         }
-        .left {
-            float: left;
-            width: 50%;
+        .content {
+            display: flex;
+            flex-direction: row;
         }
-        .right {
-            float: right;
-            width: 50%;
+        .content > div {
+            display: flex;
+            flex: 1;
+            align-content: center;
+            justify-content: center;
         }
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
+        footer > p{
+            text-align: end;
         }
-        th {
-            text-align: left;
-        }
+
         /* table, th, td {
             border: 1px solid black;
         } */
-        .width{
+        /* .width{
             resize: none;
         }
+        .border {
+            border: 1px solid black;
+        } */ */
     </style>
 </head>
 <body>
     <header>
         <h1>Let's Practice !</h1>
+        <h3>Form Belajar</h3>
+        <p>Ini adalah wabsite latihan pertama</p>
     </header>
 
-    <main>
-        <div>
-            <h3>Form Belajar</h3>
-            <p>Ini adalah wabsite latihan pertama</p>
+    <main class="content">
+        <div style="background-color: aqua; flex-direction: row;">
+            <form action="">
+                <div style="background-color: aquamarine; flex: 1;">
+                    <p>flex 1</p>
+                </div>
+                <div style="background-color: antiquewhite; flex: 1;">
+                    <p>flex 2</p>
+                </div>
+                <!-- <label for="name">Name :</label>
+                <input type="text" id="name" name="name" placeholder="Insert Name"> <br>
+
+                <label for="birthday">Date of Birth :</label>
+                <input type="date" id="birthday" name="birthday"> <br>
+
+                <label for="gender">Gender :</label>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label> <br>
+
+                <label for="message">Message :</label>
+                <textarea name="message" id="message" rows="5" placeholder="Insert Message"></textarea> <br>
+
+                <button type="submit" style="width: 100%;">
+                    Submit
+                </button> -->
+
+            </form>
         </div>
-        <div class="row">
-            <div class="left" style="background-color: aliceblue; justify-items: center; align-items: center;">
-                <form>
-                    <table>
-                        <tr>
-                            <th>
-                                <label for="name">Name</label>
-                            </th>
-                            <td>:</td>
-                            <td>
-                                <input type="text" id="name" name="name" placeholder="Insert Name">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <label for="birth">Place of Birth</label>
-                            </th>
-                            <td>:</td>
-                            <td>
-                                <input type="text" id="birth" name="birth" placeholder="Insert Place">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <label for="gender">Gender</label>
-                            </th>
-                            <td>:</td>
-                            <td>
-                                <input type="radio" id="male" name="gender">
-                                <label for="male">Male</label>
-                                <input type="radio" id="female" name="gender">
-                                <label for="female">Female</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <label for="message">Message</label>
-                            </th>
-                            <td>:</td>
-                            <td>
-                                <textarea name="message" id="message" class="width" rows="5" placeholder="Insert Message"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3" style="align-items: center;">
-                                <button type="submit" style="width: 100%;">
-                                    Submit
-                                </button>
-                            </td>
-                        </tr>
-                    </table> 
-                </form>
-            </div>
-            <div class="right" style="background-color: cadetblue;">
-                <p>col 2</p>
-            </div>
-          </div>
+        <div>
+            <p>table</p>
+        </div>
+        <!-- <div style="background-color: seashell;">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Date of Birth</th>
+                    <th>Gender</th>
+                    <th>Message</th>
+                    <th>Profile</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <td>Anandes</td>
+                    <td>01/12/2000</td>
+                    <td>Male</td>
+                    <td>Keep Respect</td>
+                    <td><a href="https://www.google.com/">Click Here</a></td>
+                    <td><img src="assets/delete.png" alt="delete" height="10%" width="10%"></td>
+                </tr>
+            </table>
+        </div> -->
+          
     </main>
 </body>
 </html>
