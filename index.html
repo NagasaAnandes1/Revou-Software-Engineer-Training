@@ -3,15 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Hi <span id="name">Nagasa</span> Welcome to My Website</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quo necessitatibus a? Quas vel magni dignissimos inventore molestias aliquam repudiandae, reiciendis corporis, omnis nemo qui! Ex quaerat laboriosam soluta recusandae!</p>
-        <button id="changeName">Change Name</button>
-        <script src="js/script.js"></script>
+        <h1>Revou Training Materials JavaScript</h1>       
     </header>
+    <main>
+        <div class="lesson">
+            <h2>Manipulating DOM (Document Object Model)</h2>
+            <p>Hi <span id="name">friends</span> Welcome to My Website</p>
+            <button id="changeName">Change Name</button>
+        </div>
+        <hr>
+
+        <div class="lesson">      
+            <h2>Form Validation</h2>
+            <div class="row">
+                <div class="colm">
+                    <form name="message-form" onsubmit="return validateForm()">
+                        Name : 
+                        <input type="text" name="fullname" placeholder="insert name">
+                        <br>
+        
+                        Date of Birth : 
+                        <input type="date" name="birthDate">
+                        <br>
+        
+                        Gender : 
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                        <br>
+        
+                        Message :
+                        <textarea name="messages" id="messages" placeholder="insert yur message" cols="30" rows="10"></textarea>
+                        <br>
+        
+                        <button onclick="submitForm()" id="submitForm">
+                            Submit
+                        </button>
+                        <p class="error-msg"><span id="error-messages" class=""></span></p>
+                    </form>
+                </div>
+                <div class="colm">
+                    <p>Name : <span id="sender-fullname"></span></p>
+                    <p>Date of Birth : <span id="sender-birthDate"></span></p>
+                    <p>Gender : <span id="sender-gender"></span></p>
+                    <p>Message : <span id="sender-messages"></span></p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        
+
+        <script src="js/script.js"></script>
+    </main>
 </body>
 </html>

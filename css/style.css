@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+}
+.error-msg {
+    color: red;
+}
+.lesson{
+    flex: 1;
+}
+.row {
+    display: flex;
+}
+.colm {
+    flex: 50%;
+}
