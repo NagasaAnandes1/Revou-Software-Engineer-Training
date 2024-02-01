@@ -1,0 +1,240 @@
+/* Header Style */
+.header-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 0px 24px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo > img {
+    height: 100px;
+    object-fit: cover;
+}
+.logo > h1 {
+   font-size: 24px;
+
+}
+.navigation-page {
+    display: flex;
+}
+.navigation-page > button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+.navigation-page > button:hover {
+    background-color: whitesmoke;
+}
+.navigation-page > a:visited, a:link {
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}   
+
+/* Home Page Style */
+.home {
+    padding: 24px 24px;
+}
+.home h1 {
+    text-align: center;
+    font-size: 32px;
+}
+.home p {
+    text-align: justify;
+    font-size: 16px;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+}
+
+/* Autoslide Style */
+.image-slideshow {
+    width: 70%;
+    position: relative;
+}
+.imageView {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+/* Contact Form Style */
+.uiForm {
+    width: 30%;
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 6px;
+    padding: 20px;
+}
+.form {
+    background-color: whitesmoke;
+    border-radius: 6px;
+    padding: 10px;
+}
+input {
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 16px;
+    display: inline-block;
+    width: 90%;
+}
+.label {
+    margin-top: 24px;
+}
+select {
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 16px;
+    display: inline-block;
+    width: 95%;
+}
+.send {
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    width: 90%;
+    margin: 24px 0px 0px 0px;
+}
+.headline {
+    width: 50%;
+}
+.headline > p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.benefit {
+    display: flex;
+    margin-top: 24px;
+}
+
+.ourPackage {
+    display: contents;
+}
+.titleBgr {
+    width: 100%;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0px 64px 0px;
+}
+.titleBgr > h1 {
+    text-align: center;
+}
+.caption {
+    text-align: justify;
+}
+.circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    margin-right: 12px;
+    background-color: aliceblue;
+}
+
+.callUs {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    justify-content: center;
+    align-items: center;
+}
+.callUs > h1 {
+    text-align: center;
+    font-size: 32px;
+}
+.callUs > p {
+    text-align: center;
+    font-size: 16px;
+}
+.callUs > button {
+    background-color: midnightblue;
+    border: 1px solid black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+.callUs > button:hover {
+    background-color: navy;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 33%;
+    margin: 2px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row-box{
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Clear floats after the columns */
+.row-box:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the counter cards */
+.card {
+    padding: 16px;
+    text-align: justify;
+    /* background-color: #f1f1f1; */
+    display: flex;
+    /* align-items: center; */
+}
+
+footer {
+    text-align: center;
+}

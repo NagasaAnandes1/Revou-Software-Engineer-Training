@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Groceries</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-wraper">
+        <div class="logo">
+            <img src="https://img.freepik.com/free-vector/supermarket-logo-with-groceries_23-2148470294.jpg?w=740&t=st=1706778295~exp=1706778895~hmac=24ba53074e49c42705d653b187b57626931db88917096bbcf1524b2350acbef5" alt="Logo">
+            <h1>E-Groceries</h1>
+        </div>
+        <div class="navigation-page">
+            <a href="#home">Home</a>
+            <a href="#OurPackage">Our Package</a>
+            <button>Call Us</button>
+        </div>
+    </header>
+    <main>
+        <div class="home" id="home">           
+            <h1>Top Rated E-Groceries Shop in <br> Indonesian</h1>
+            <p><center>Every Day with best ingredients</center></p>
+            <div class="row">
+                <div class="image-slideshow">
+                    <div class="image fade">
+                        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image1" class="imageView">   
+                        <p><center>"Every day buy fresh vegetables here"</center></p>
+                        <div class="profile">
+                            <div class="card">
+                                <div class="circle">
+                                </div>
+                                <div>
+                                    <p>Florence Hughes</p>
+                                    <p>Housewife, 29</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image fade">
+                        <img src="https://images.unsplash.com/photo-1506617420156-8e4536971650?q=80&w=2023&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image2" class="imageView">
+                        <p><center>"Every day buy fresh vegetables here"</center></p>
+                        <div class="profile">
+                            <div class="card">
+                                <div class="circle">
+                                </div>
+                                <div>
+                                    <p>Florence Hughes</p>
+                                    <p>Housewife, 30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image fade">
+                        <img src="https://images.unsplash.com/photo-1590856029930-218a3976fb17?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image3" class="imageView">
+                        <p><center>"Every day buy fresh vegetables here"</center></p>
+                        <div class="profile">
+                            <div class="card">
+                                <div class="circle">
+                                </div>
+                                <div>
+                                    <p>Florence Hughes</p>
+                                    <p>Housewife, 31</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image fade">
+                        <img src="https://images.unsplash.com/photo-1582119702840-b7e1213c349e?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image4" class="imageView">
+                        <p><center>"Every day buy fresh vegetables here"</center></p>
+                        <div class="profile">
+                            <div class="card">
+                                <div class="circle">
+                                </div>
+                                <div>
+                                    <p>Florence Hughes</p>
+                                    <p>Housewife, 32</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image fade">
+                        <img src="https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image5" class="imageView">
+                        <p><center>"Every day buy fresh vegetables here"</center></p>
+                        <div class="profile">
+                            <div class="card">
+                                <div class="circle">
+                                </div>
+                                <div>
+                                    <p>Florence Hughes</p>
+                                    <p>Housewife, 28</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uiForm">   
+                    <h1>Contact Us</h1>
+                    <p>Sales will contact you 1x24 hours after we receive the data</p>
+                    <form onsubmit="validateForm()">
+                        <div class="label">
+                            <label for="fullname">
+                                Your Name : <br>
+                                <input type="text" name="fullname" id="fullname" autocomplete="given-name" placeholder="First and last name" class="    "><br>
+                            </label>
+                        </div>
+                        <div class="label">
+                            <label for="email">
+                            Email Address <br>
+                            <input type="text" name="email" id="email" autocomplete="given-email" placeholder="example@email.com"> <br>
+                            </label>
+                        </div>
+                        <div class="label">
+                            <label for="interest">
+                                What are you interested in? <br>
+                                <select name="interest" id="interest" form="interest">
+                                    <option value="0" disabled selected>Select Option</option>
+                                    <option value="vegetable">Fresh Vegetabele</option>
+                                    <option value="fruit">Fresh Fruit</option>
+                                    <option value="delivery">Instant Delivery</option>
+                                    <option value="ingredients">Kitchen Ingredients</option>
+                                    <option value="kitchenSet">Kitchen Set</option>
+                                    <option value="bundling">Bundling Set</option>
+                                </select>
+                            </label>
+                        </div>   
+                        <button class="send" id="send">
+                            Send
+                        </button>
+                        <p class="error-msg"><span id="error-messages"></span></p>
+                    </form>
+                      
+                </div>
+            </div>
+            <div class="headline">
+                <p>Use this space for provide users with more information about your offer. Conside it a follow-up to your headline and explain the benefits of your service or product.</p>
+                <div class="benefit">
+                    <div class="circle">
+                    </div>
+                    <p>your first feature, writen in the form of a benefit statement.</p>
+                </div>
+                <div class="benefit">
+                    <div class="circle">
+                    </div>
+                    <p>your second feature. writen in the form of a benefit statement</p>
+                </div>
+                <div class="benefit">
+                    <div class="circle">
+                    </div>
+                    <p>your third feature, writen in the form of a benefit statement.</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="ourPackage" id="OurPackage">
+            <div class="titleBgr">
+                <h1>Our Package</h1>
+            </div>
+            <div class="row-box">
+                <div class="column">
+                    <div class="card">
+                        <div class="circle"><img src="https://img.freepik.com/free-vector/start_53876-25533.jpg?w=740&t=st=1706799026~exp=1706799626~hmac=f71f5cafcfede2cbd6349b980d26b39c674adbf5e47944892bc47062bd607d48" alt="" class="circle"></div>
+                        <div class="caption">
+                            <h3>Fresh Vegetable</h3>
+                            <p>Fresh vegetables directly from the best agricultural sourcest</p>
+                        </div>
+                    </div>
+                  </div>
+                
+                  <div class="column">
+                    <div class="card">
+                        <div class="circle"><img src="https://img.freepik.com/free-vector/start_53876-25533.jpg?w=740&t=st=1706799026~exp=1706799626~hmac=f71f5cafcfede2cbd6349b980d26b39c674adbf5e47944892bc47062bd607d48" alt="" class="circle"></div>
+                        <div class="caption">
+                            <h3>Fresh Fruit</h3>
+                            <p>Fruit with the best quality from local or imported and attractive pricest</p>
+                        </div>
+                     
+                    </div>
+                  </div>
+                  
+                  <div class="column">
+                    <div class="card">
+                        <div class="circle"><img src="https://img.freepik.com/free-vector/start_53876-25533.jpg?w=740&t=st=1706799026~exp=1706799626~hmac=f71f5cafcfede2cbd6349b980d26b39c674adbf5e47944892bc47062bd607d48" alt="" class="circle"></div>
+                        <div class="caption">
+                            <h3>Instant Delivery</h3>
+                            <p>Sent instantly by couriers who have been trained with SOPs to maintain your shopping conditionst</p>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  <div class="column">
+                    <div class="card">
+                        <div class="circle"><img src="https://img.freepik.com/free-vector/start_53876-25533.jpg?w=740&t=st=1706799026~exp=1706799626~hmac=f71f5cafcfede2cbd6349b980d26b39c674adbf5e47944892bc47062bd607d48" alt="" class="circle"></div>
+                        <div class="caption">
+                            <h3>Kitchen Ingredients</h3>
+                            <p>Complete kitchen spices for your cooking needs</p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="card">
+                        <div class="circle"><img src="https://img.freepik.com/free-vector/start_53876-25533.jpg?w=740&t=st=1706799026~exp=1706799626~hmac=f71f5cafcfede2cbd6349b980d26b39c674adbf5e47944892bc47062bd607d48" alt="" class="circle"></div>
+                        <div class="caption">
+                            <h3>Kitchen Set</h3>
+                            <p>All kinds of cooking utensils to help you cookt</p>    
+                        </div>
+        
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="card">
+                        <div class="circle"><img src="https://img.freepik.com/free-vector/start_53876-25533.jpg?w=740&t=st=1706799026~exp=1706799626~hmac=f71f5cafcfede2cbd6349b980d26b39c674adbf5e47944892bc47062bd607d48" alt="" class="circle"></div>
+                        <div class="caption">
+                            <h3>Bundling Set</h3>
+                            <p>Confused about what to cook? Packages are available for you to cook in your kitchen</p>
+                        </div>
+                 
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <hr>
+        <div class="callUs">
+            <h1>Your Closing Argument Headline</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, consequuntur eius. Veniam voluptatum corporis molestiae! Facere labore quod fuga ratione ab officia, rerum officiis explicabo blanditiis inventore aspernatur, odio quasi.</p>
+            <button >
+                Call To Action
+            </button>
+        </div>
+        <hr>
+        <script src="js/script.js"></script>
+        <script src="https://kit.fontawesome.com/3ed4f57cc0.js" crossorigin="anonymous"></script>
+    </main>
+    <footer>
+        <h1>Logo.</h1>
+    </footer>
+</body>
+</html>
